@@ -13,6 +13,12 @@ def go():
     return template("index")
 
 
+@route("/static/<filepath:path>")
+def server_static(filepath):
+	"""CSS"""
+	return static_file(filepath, root="static")
+
+
 
 
 run(host='localhost', port=8080, debug=True, reloader=True)
