@@ -1,7 +1,9 @@
+
 # -*- coding: utf-8 -*-
 
 from bottle import *
 import json
+import spotipy
 
 @route("/static/<filepath:path>")
 def server_static(filepath):
