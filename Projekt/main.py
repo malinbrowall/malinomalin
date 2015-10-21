@@ -18,8 +18,8 @@ def start():
 	return template("index")
 
 @route('/play/')
-def main(): 
-	""" play """
+def main(): 	
+	""" Kör funktionerna get_song och spot_search """
 	sr_song, text = get_song()
 	print sr_song 
 	spoty = spot_search(sr_song)

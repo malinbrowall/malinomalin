@@ -15,7 +15,6 @@ def get_song():
 		text = "Song playing now: "
 		return (sr_song, text)
 
-
 	except:
 		try:
 			sr_song = 	json_obj['playlist']['nextsong']['description']
@@ -26,13 +25,3 @@ def get_song():
 			sr_song = json_obj['playlist']['previoussong']['description']
 			text = "Previous song: "
 			return (sr_song, text)
-
-
-
-
-
-
-'''
-print json_obj : visar hela skiten
-print song
-'''
