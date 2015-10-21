@@ -9,20 +9,16 @@ json_obj = load(response)
 def get_song():
 	try:
 		song = json_obj['playlist']['song']['description']
-		print "Song playing now: " + song
-		return song
+		return "Song playing now: " + song
 
 	except:
 		try:
 			song = 	json_obj['playlist']['nextsong']['description']
 			return "Next song is: " + song
-			
-			'''print "kan inte visa denna song "'''
 
 		except:
 			song = json_obj['playlist']['previoussong']['description']
-			'''print "Previous song: " + song'''
-			return song
+			return "Previous song: " + song
 
 
 

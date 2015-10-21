@@ -4,6 +4,7 @@ from sr import *
 from spot import *
 from urllib2 import urlopen
 from json import load
+import requests
 
 def main():
 	song = get_song()
