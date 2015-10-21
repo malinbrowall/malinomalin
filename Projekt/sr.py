@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from urllib2 import urlopen
 from json import load
 url = "http://api.sr.se/api/v2/playlists/rightnow?channelid=164"
@@ -10,6 +13,7 @@ def get_song():
 	try:
 		song = json_obj['playlist']['song']['description']
 		return "Song playing now: " + song
+
 
 	except:
 		try:
