@@ -20,11 +20,12 @@ def start():
 @route('/play/')
 def main(): 
 	""" play """
-	song = get_song()
-	spoty = spot_search(song)
+	sr_song, text = get_song()
+	print sr_song 
+	spoty = spot_search(sr_song)
 
-	'''print song + str(spoty)'''
-	return template("play", song=song, spoty=spoty,)
+	
+	return template("play", sr_song=sr_song, spoty=spoty, text=text)
 
 
 

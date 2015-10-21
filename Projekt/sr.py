@@ -11,18 +11,21 @@ json_obj = load(response)
 
 def get_song():
 	try:
-		song = json_obj['playlist']['song']['description']
-		return "Song playing now: " + song
+		sr_song = json_obj['playlist']['song']['description']
+		text = "Song playing now: "
+		return (sr_song, text)
 
 
 	except:
 		try:
-			song = 	json_obj['playlist']['nextsong']['description']
-			return "Next song is: " + song
+			sr_song = 	json_obj['playlist']['nextsong']['description']
+			text = "Next song: "
+			return (sr_song, text)
 
 		except:
-			song = json_obj['playlist']['previoussong']['description']
-			return "Previous song: " + song
+			sr_song = json_obj['playlist']['previoussong']['description']
+			text = "Previous song: "
+			return (sr_song, text)
 
 
 

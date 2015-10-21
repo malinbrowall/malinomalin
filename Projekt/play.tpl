@@ -15,13 +15,12 @@
 
 
     <div id="box" >
-      <p id="nowPlay">{{song}}</p>
-       <p>{{song}}</p>
-            <p><a href="{{spoty}}">Tryck här</a>hej</p>
+      <p id="nowPlay">{{text}}</p>
+       <p>{{sr_song}}</p>
+            <p><a href="{{spoty}}">Länk till Spotify</a></p>
 
       <p>{{spoty}}</p>
-            <p><a href="{{song}}">Tryck här hörruu</a>hej</p>
-          </div>
+
 
 
     </div>
