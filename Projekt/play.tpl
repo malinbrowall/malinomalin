@@ -4,27 +4,17 @@
     <title>Radio</title>
     <link rel="stylesheet" href="/static/css.css" type="text/css">
     <meta charset="UTF-8">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
-  <body>
-
-    <header>
-      <h1>
-          P3
-      </h1>
-    </header>
-
-
-    <div id="box" >
-      <p id="nowPlay">{{text}}</p>
-       <p>{{sr_song}}</p>
-            <p><a href="{{spoty}}">Länk till Spotify</a></p>
-
-      <p>{{spoty}}</p>
-
-
-
-    </div>
+    <body>
+      <h1>Diggypy.</h1> 
+      <div id="box" >
+        <p>{{text}}</p>
+        <p>{{sr_song}}</p>
+        <p><a href="{{spoty}}">Länk till Spotify</a></p>
+        <p id="nowPlay">{{spoty}}</p>
+      </div>
    
 
-  </body>
+</body>
 </html>

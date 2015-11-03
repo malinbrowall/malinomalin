@@ -1,20 +1,46 @@
 
 
+body {
+	background-image: url("bground.jpeg");
+	font-family: 'Open Sans', sans-serif;
+	color: #ffffff;
+}
+
+h1{
+	margin:200px 50px 5px 336px;
+}
 
 #box{
-	margin: 0px auto;
+	margin: auto;
+	margin-top: 0px;
 	max-width: 50%;
-	border:5px solid;
-	font-family: "Droid Serif", Times, "Times New Roman", serif;
-	line-height:1.5;
-	color:#000;
+	line-height:1;
+	color:#FFF;
 	padding: 20px;
 	text-align: center;
-	
-	
-	/* Bonus: gradient background */
-	background: #FFFFFF; /* old browsers */
-    background: -moz-linear-gradient(top, #FFFFFF 12%, #DDD 100%); /* firefox */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,#FFFFFF), color-stop(100%,#DDD)); /* webkit */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#DDDDDD',GradientType=0 ); /* ie */
+	background: rgba(0, 0, 0, 0.4);
+	border-radius: 5px;
+
+}
+
+.btn {
+	background-color:#80b71a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:15px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.btn:hover {
+	background-color:#5cbf2a;
+}
+.btn:active {
+	position:relative;
+	top:1px;
 }
