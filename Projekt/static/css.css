@@ -43,5 +43,12 @@ h1{
 	background-color:#497000;
 }
 
+a {
+	color:#81b71a;
+}
+
+a:hover {
+	color:#497000;
+}
 
 
