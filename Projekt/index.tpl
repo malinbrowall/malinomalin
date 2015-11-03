@@ -9,7 +9,7 @@
     <body>
         <h1>Diggypy.</h1> 
         <div id="box" >
-            <form action="/song/" method="GET">   
+            <form action="/song" method="GET">   
             <p>Tryck på "Sök" för att se vilken låt som spelas på P3 </p>
             <input class="btn" type="submit" name="send" value="Sök">
         </div>   
