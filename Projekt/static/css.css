@@ -26,18 +26,22 @@ h1{
 .btn {
 	background-color:#81b71a;
 	border-radius:4px;
-	display:inline-block;
-	cursor:pointer;
+	border:0px;
 	color:#ffffff;
 	font-family:Arial;
 	font-size:17px;
-	padding:15px 31px;
-	text-decoration:none;
+	padding:12px 25px;
+	cursor:pointer;
 }
-.btn:hover {
-	background-color:#81b71b;
-}
+
 .btn:active {
-	position:relative;
-	top:1px;
+	border:1px;
+	border-color: black;
 }
+
+.btn:hover {
+	background-color:#497000;
+}
+
+
+
