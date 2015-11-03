@@ -15,25 +15,26 @@ def get_nextsong():
 		text = "Next song: "
 		return (sr_song, text)
 	except:
-		text_error = "Is not avaliable right now"
-		return text_error
+		text = "Is not avaliable right now"
+		return text
 
-'''def get_previoussong():
+def get_previoussong():
 	try:
 		sr_song = json_obj['playlist']['previoussong']['description']
 		text = "Previous song: "
 		return (sr_song, text)
 	except:	
-		text_error = "Is not avaliable right now"
-		return text_error	'''
+		text = "Is not avaliable right now"
+		return text	
 
-'''def get_songplayingnow():
+def get_songplayingnow():
 	try:
 		sr_song = json_obj['playlist']['song']['description']
 		text = "Song playing now: "
 		return (sr_song, text)
 	except:
-		text_error = "Is not avaliable right now"'''
+		text = "Is not avaliable right now"
+		return text
 
 def get_song():
 	'''Forsoker hamta lat och artist som spelas just nu pa SR och returnerar det tillsammans med textstrangen

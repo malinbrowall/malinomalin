@@ -18,7 +18,7 @@ def start():
 	""" Första sidan """
 	return template("index")
 
-@route('/play/')
+@route('/song/')
 def main(): 	
 	""" Kör funktionerna get_song och spot_search """
 	sr_song, text = get_song()
@@ -41,9 +41,42 @@ def next():
 	print sr_song 
 	spoty = spot_search(sr_song)
 
+	if request.headers.get('Accept') == "application/json":
+		response.set_header("Content-Type", "application/json")
+		json_obj = {"sverigesradio_P3": {"song_artist": sr_song, "spotify_url": spoty}}
+		return dumps(json_obj)
+	else:
+		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 	
-	return template("play", sr_song=sr_song, spoty=spoty, text=text)
+'''@route('/previoussong/')
+def main(): 	
+	""" Kör funktionerna get_song och spot_search """
+	sr_song, text = get_previoussong()
+	print sr_song 
+	spoty = spot_search(sr_song)
 
+
+	if request.headers.get('Accept') == "application/json":
+		response.set_header("Content-Type", "application/json")
+		json_obj = {"sverigesradio_P3": {"song_artist": sr_song, "spotify_url": spoty}}
+		return dumps(json_obj)
+	else:
+		return template("play", sr_song=sr_song, spoty=spoty, text=text)'''
+
+@route('/songplayingnow/')
+def main(): 	
+	""" Kör funktionerna get_song och spot_search """
+	sr_song, text = get_songplayingnow()
+	print sr_song 
+	spoty = spot_search(sr_song)
+
+
+	if request.headers.get('Accept') == "application/json":
+		response.set_header("Content-Type", "application/json")
+		json_obj = {"sverigesradio_P3": {"song_artist": sr_song, "spotify_url": spoty}}
+		return dumps(json_obj)
+	else:
+		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 
 run(host='localhost', port=8080, debug=True, reloader=True)
 main()

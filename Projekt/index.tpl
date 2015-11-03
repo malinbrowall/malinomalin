@@ -13,7 +13,7 @@
                 </h1>
             </header>
              <div id="box" >
-                <form action="/play/" method="GET">
+                <form action="/song/" method="GET">
                     <p>Tryck på "Spelas nu" för att se vilken låt som spelas:</p>
                     <input type="submit" name="send" value="Spelas nu">
             <article>
