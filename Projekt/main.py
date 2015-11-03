@@ -18,7 +18,7 @@ def start():
 	""" Första sidan """
 	return template("index")
 
-@route('/song/')
+@route('/song')
 def main(): 	
 	""" Kör funktionerna get_song och spot_search """
 	sr_song, text = get_song()
@@ -34,7 +34,7 @@ def main():
 		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 
 
-@route('/nextsong/')
+@route('/nextsong')
 def next(): 	
 	""" Kör funktionerna get_nextsong och spot_search """
 	sr_song, text = get_nextsong()
@@ -48,7 +48,7 @@ def next():
 	else:
 		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 	
-@route('/previoussong/')
+@route('/previoussong')
 def main(): 	
 	""" Kör funktionerna get_song och spot_search """
 	sr_song, text = get_previoussong()
@@ -63,7 +63,7 @@ def main():
 	else:
 		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 
-@route('/songplayingnow/')
+@route('/songplayingnow')
 def main(): 	
 	""" Kör funktionerna get_song och spot_search """
 	sr_song, text = get_songplayingnow()

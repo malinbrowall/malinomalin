@@ -11,7 +11,8 @@
       <div id="box" >
         <p>{{text}}</p>
         <p>{{sr_song}}</p>
-        <p><a href="{{spoty}}">Länk till Spotify</a></p>
+        % if spoty != None:
+          <p><a href="{{spoty}}">Länk till Spotify</a></p>
         <p id="nowPlay">{{spoty}}</p>
       </div>
    
