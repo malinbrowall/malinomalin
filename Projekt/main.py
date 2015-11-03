@@ -48,7 +48,7 @@ def next():
 	else:
 		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 	
-'''@route('/previoussong/')
+@route('/previoussong/')
 def main(): 	
 	""" Kör funktionerna get_song och spot_search """
 	sr_song, text = get_previoussong()
@@ -61,7 +61,7 @@ def main():
 		json_obj = {"sverigesradio_P3": {"song_artist": sr_song, "spotify_url": spoty}}
 		return dumps(json_obj)
 	else:
-		return template("play", sr_song=sr_song, spoty=spoty, text=text)'''
+		return template("play", sr_song=sr_song, spoty=spoty, text=text)
 
 @route('/songplayingnow/')
 def main(): 	
