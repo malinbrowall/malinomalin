@@ -16,7 +16,7 @@ def get_nextsong():
 		return (sr_song, text)
 	except:
 		text = "Is not avaliable right now"
-		return text
+		return (" ", text)
 
 def get_previoussong():
 	try:
@@ -25,7 +25,7 @@ def get_previoussong():
 		return (sr_song, text)
 	except:	
 		text = "Is not avaliable right now"
-		return text	
+		return (" ", text)
 
 def get_songplayingnow():
 	try:
@@ -34,7 +34,7 @@ def get_songplayingnow():
 		return (sr_song, text)
 	except:
 		text = "Is not avaliable right now"
-		return text
+		return (" ", text)
 
 def get_song():
 	'''Forsoker hamta lat och artist som spelas just nu pa SR och returnerar det tillsammans med textstrangen
