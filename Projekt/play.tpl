@@ -13,7 +13,7 @@
         <p>{{sr_song}}</p>
         % if spoty != None:
           <p><a href="{{spoty}}">Länk till Spotify</a></p>
-        <p id="nowPlay">{{spoty}}</p>
+       
       </div>
    
 
