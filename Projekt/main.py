@@ -3,9 +3,10 @@
 from sr import *
 from spot import *
 from urllib2 import urlopen
-from json import load
+from json import *
 import requests
 from bottle import *
+import requests 
 
 @route("/static/<filepath:path>")
 def style(filepath): 
@@ -24,9 +25,24 @@ def main():
 	print sr_song 
 	spoty = spot_search(sr_song)
 
+
+	if request.headers.get('Accept') == "application/json":
+		response.set_header("Content-Type", "application/json")
+		json_obj = {"sverigesradio_P3": {"song_artist": sr_song, "spotify_url": spoty}}
+		return dumps(json_obj)
+	else:
+		return template("play", sr_song=sr_song, spoty=spoty, text=text)
+
+
+@route('/nextsong/')
+def next(): 	
+	""" Kör funktionerna get_nextsong och spot_search """
+	sr_song, text = get_nextsong()
+	print sr_song 
+	spoty = spot_search(sr_song)
+
 	
 	return template("play", sr_song=sr_song, spoty=spoty, text=text)
-
 
 
 run(host='localhost', port=8080, debug=True, reloader=True)
