@@ -7,7 +7,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
     <body>
-      <h1>Diggypy.</h1> 
+      <h1>Diggipy.</h1> 
       <div id="box" >
         <p>{{text}}</p>
         <p>{{sr_song}}</p>

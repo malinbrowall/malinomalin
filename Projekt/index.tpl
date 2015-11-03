@@ -7,7 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <h1>Diggypy.</h1> 
+        <h1>Diggipy.</h1> 
         <div id="box" >
             <form action="/song" method="GET">   
             <p>Tryck på "Sök" för att se vilken låt som spelas på P3 </p>
