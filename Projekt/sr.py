@@ -15,7 +15,7 @@ def get_nextsong():
 		text = "Next song: "
 		return (sr_song, text)
 	except:
-		text = "Is not avaliable right now"
+		text = "Is not available right now"
 		return (" ", text)
 
 def get_previoussong():
@@ -24,7 +24,7 @@ def get_previoussong():
 		text = "Previous song: "
 		return (sr_song, text)
 	except:	
-		text = "Is not avaliable right now"
+		text = "Is not available right now"
 		return (" ", text)
 
 def get_songplayingnow():
@@ -33,7 +33,7 @@ def get_songplayingnow():
 		text = "Song playing now: "
 		return (sr_song, text)
 	except:
-		text = "Is not avaliable right now"
+		text = "Is not available right now"
 		return (" ", text)
 
 def get_song():
